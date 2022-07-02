@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		F825B5C2286FD9920017CA18 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F825B5C1286FD9920017CA18 /* main.cpp */; };
+		F825B5CF286FDBA70017CA18 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F825B5CE286FDBA70017CA18 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F825B5BC286FD9920017CA18 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		F825B5CA286FDBA70017CA18 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,19 @@
 /* Begin PBXFileReference section */
 		F825B5BE286FD9920017CA18 /* LeetCode Problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode Problems"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F825B5C1286FD9920017CA18 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F825B5CC286FDBA70017CA18 /* NextPermutation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = NextPermutation; sourceTree = BUILT_PRODUCTS_DIR; };
+		F825B5CE286FDBA70017CA18 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F825B5BB286FD9920017CA18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F825B5C9286FDBA70017CA18 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				F825B5C0286FD9920017CA18 /* LeetCode Problems */,
+				F825B5CD286FDBA70017CA18 /* NextPermutation */,
 				F825B5BF286FD9920017CA18 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F825B5BE286FD9920017CA18 /* LeetCode Problems */,
+				F825B5CC286FDBA70017CA18 /* NextPermutation */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +81,14 @@
 				F825B5C1286FD9920017CA18 /* main.cpp */,
 			);
 			path = "LeetCode Problems";
+			sourceTree = "<group>";
+		};
+		F825B5CD286FDBA70017CA18 /* NextPermutation */ = {
+			isa = PBXGroup;
+			children = (
+				F825B5CE286FDBA70017CA18 /* main.cpp */,
+			);
+			path = NextPermutation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +111,23 @@
 			productReference = F825B5BE286FD9920017CA18 /* LeetCode Problems */;
 			productType = "com.apple.product-type.tool";
 		};
+		F825B5CB286FDBA70017CA18 /* NextPermutation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F825B5D0286FDBA70017CA18 /* Build configuration list for PBXNativeTarget "NextPermutation" */;
+			buildPhases = (
+				F825B5C8286FDBA70017CA18 /* Sources */,
+				F825B5C9286FDBA70017CA18 /* Frameworks */,
+				F825B5CA286FDBA70017CA18 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NextPermutation;
+			productName = NextPermutation;
+			productReference = F825B5CC286FDBA70017CA18 /* NextPermutation */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +138,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					F825B5BD286FD9920017CA18 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F825B5CB286FDBA70017CA18 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -110,6 +159,7 @@
 			projectRoot = "";
 			targets = (
 				F825B5BD286FD9920017CA18 /* LeetCode Problems */,
+				F825B5CB286FDBA70017CA18 /* NextPermutation */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +170,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F825B5C2286FD9920017CA18 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F825B5C8286FDBA70017CA18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F825B5CF286FDBA70017CA18 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +309,22 @@
 			};
 			name = Release;
 		};
+		F825B5D1286FDBA70017CA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F825B5D2286FDBA70017CA18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -268,6 +342,15 @@
 			buildConfigurations = (
 				F825B5C6286FD9920017CA18 /* Debug */,
 				F825B5C7286FD9920017CA18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F825B5D0286FDBA70017CA18 /* Build configuration list for PBXNativeTarget "NextPermutation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F825B5D1286FDBA70017CA18 /* Debug */,
+				F825B5D2286FDBA70017CA18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
